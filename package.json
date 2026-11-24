@@ -1,0 +1,20 @@
+{
+  "name": "waylens",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "WayLens: a hybrid on-device/cloud AI assistant for blind travelers, built on Firebase AI Logic.",
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node tests/smoke.cjs"
+  },
+  "dependencies": {
+    "firebase": "^13.4.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}

@@ -1,0 +1,28 @@
+:root{--bg:#000;--fg:#fff;--muted:#c9c9c9;--accent:#ffd400;--btn:#1b1b1b;--line:#fff}
+*{box-sizing:border-box}
+html{font-size:20px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5;padding:max(12px,env(safe-area-inset-top)) 16px 32px}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:var(--accent);color:#000;padding:8px;z-index:9}
+header{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+h1{margin:.2em 0;font-size:1.6rem}h2{font-size:1.1rem;margin:1em 0 .3em}
+.badge{border:2px solid var(--line);border-radius:999px;padding:2px 10px;font-size:.75rem;margin-left:6px}
+.badge.on{background:var(--accent);color:#000;border-color:var(--accent)}
+.badge.off{border-style:dashed}
+video{width:100%;max-height:28vh;object-fit:cover;border-radius:12px;background:#111}
+.big,.mid{font:inherit;color:var(--fg);background:var(--btn);border:3px solid var(--line);border-radius:16px;cursor:pointer;width:100%}
+.big{min-height:84px;font-size:1.3rem;font-weight:700;margin:10px 0}
+.mid{min-height:60px;font-size:1.05rem;font-weight:600;flex:1}
+.primary{background:var(--accent);color:#000;border-color:var(--accent)}
+.row{display:flex;gap:10px;margin:8px 0}
+button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible,#result:focus-visible{outline:4px solid var(--accent);outline-offset:3px}
+button[disabled]{opacity:.5}
+button[aria-busy=true]{border-style:dashed}
+kbd{font-size:.7em;opacity:.8;border:1px solid currentColor;border-radius:6px;padding:0 6px;margin-left:6px}
+.status{min-height:2.4em;color:var(--accent);font-weight:600;margin:8px 0}
+#result{font-size:1.2rem;white-space:pre-wrap;border:2px solid var(--line);border-radius:12px;padding:12px}
+label{display:block;margin:12px 0 4px;font-weight:600}
+input[type=text],select{width:100%;font:inherit;padding:12px;border-radius:12px;border:3px solid var(--line);background:#111;color:var(--fg)}
+.check{display:flex;gap:10px;align-items:center}
+.legal{color:var(--muted);font-size:.8rem;margin-top:24px}
+@media (prefers-reduced-motion:no-preference){button{transition:transform .08s}button:active{transform:scale(.98)}}
+@media (min-width:720px){body{max-width:760px;margin:0 auto}}
